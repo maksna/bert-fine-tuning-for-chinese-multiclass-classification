@@ -5,8 +5,10 @@ Use google BERT to do chinese sentences multiclass classification !
 #train
 
 export BERT_BASE_DIR=/path/to/model/chinese_L-12_H-768_A-12
+
 export DATA_DIR=/path/to/data
-python run_text.py \
+
+python run_chinese_classification.py \
   --do_train=true \
   --do_eval=true \
   --train_dir=$DATA_DIR/Chinesedata/train.tsv \
@@ -24,10 +26,13 @@ python run_text.py \
 #test
 
 export BERT_BASE_DIR=/path/to/model/chinese_L-12_H-768_A-12
+
 export DATA_DIR=/path/to/model/data
+
 export TRAINED_CLASSIFIER=/path/to/model/chinese_model
-python run_text.py \
-python run_text.py \
+
+
+python run_chinese_classification.py \
   --train_dir=$DATA_DIR/Chinesedata/train.tsv \
   --dev_dir=$DATA_DIR/Chinesedata/dev.tsv \
   --test_dir=$DATA_DIR/Chinesedata/test.tsv \
