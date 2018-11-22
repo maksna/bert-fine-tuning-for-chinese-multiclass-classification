@@ -3,6 +3,7 @@
 Use google BERT to do chinese sentences multiclass classification !
 
 #train
+
 export BERT_BASE_DIR=/path/to/model/chinese_L-12_H-768_A-12
 export DATA_DIR=/path/to/data
 python run_text.py \
@@ -21,6 +22,7 @@ python run_text.py \
   --output_dir=/home/mcy/chinese_model
 
 #test
+
 export BERT_BASE_DIR=/path/to/model/chinese_L-12_H-768_A-12
 export DATA_DIR=/path/to/model/data
 export TRAINED_CLASSIFIER=/path/to/model/chinese_model
@@ -37,7 +39,13 @@ python run_text.py \
   --output_dir=/home/mcy/chinese_result
  
 #results:
+
 python results.py
+
+#data
+
+url：https://pan.baidu.com/s/1qDngiTq1FyNxb5GX-zDiCg 
+passwd：9dk8 
 
 #reference:
 
