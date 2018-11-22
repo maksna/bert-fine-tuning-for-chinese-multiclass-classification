@@ -21,7 +21,7 @@ python run_chinese_classification.py \
   --train_batch_size=6 \
   --learning_rate=1e-6 \
   --num_train_epochs=10.0 \
-  --output_dir=/home/mcy/chinese_model
+  --output_dir=/path/to/chinese_model
 
 #test
 
@@ -41,7 +41,7 @@ python run_chinese_classification.py \
   --bert_config_file=$BERT_BASE_DIR/bert_config.json \
   --init_checkpoint=$TRAINED_CLASSIFIER \
   --max_seq_length=512 \
-  --output_dir=/home/mcy/chinese_result
+  --output_dir=/path/to/chinese_result
  
 #results:
 
